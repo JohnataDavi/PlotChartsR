@@ -1,15 +1,13 @@
 #install.packages("ggplot2")
-#install.packages("dplyr")
+#install.packages("magrittr")
 #install.packages("readr")
 library(ggplot2)
-#library(dplyr)
 library(readr)
 library(magrittr)
 
 imdb <- readr::read_rds("data/imdb.rds")
 
 ggplot(data = imdb)
-
 
 my_data <- imdb %>%
   mutate(
